@@ -1,0 +1,172 @@
+extends ../layouts/default.pug
+include ../mixins/box-head.pug
+block title
+    title Trang chủ
+block main
+    //-section-1
+    .section-1
+            .container
+               .section-1__wrap
+                    img(src="assets/images/section-1-bg-4.svg" class="section-1__bg-4" alt="")
+                    img(src="assets/images/section-1-bg-1.svg" class="section-1__bg-1" alt="")
+                    .section-1__content
+                        h1(class="section-1__title") Thêm Một Bạn
+                        h2(class="section-1__sub-title") Thêm Ngàn Niềm Vui!
+                        p(class="section-1__desc") Có một con thú cưng đồng nghĩa với việc bạn có thêm niềm vui mới. Chúng tôi có hơn 200 con thú cưng khác nhau có thể đáp ứng nhu cầu của bạn!
+                        .section-1__buttons
+                            a(href="#" class="button button--outline") Giới Thiệu <i class="fa-regular fa-circle-play"></i>
+                            a(href="#" class="button") Khám Phá Ngay
+                    img(src="assets/images/section-1-bg-2.svg" class="section-1__bg-2" alt="")
+                    .section-1__image
+                        img(src="assets/images/section-1-bg-3.svg" class="section-1__bg-3" alt="")
+                        img(src="assets/images/image-1.png" class="section-1__image-main" alt="")
+    //-end section-1
+    //-section-2
+    .section-2
+            .container
+                +box-head(
+                    "Có gì mới",
+                    "một số vật nuôi của chúng tôi",
+                    "#"
+                )
+                .section-2__wrap
+                    .product-item
+                        .product-item__image
+                            img(src="assets/images/product-1.jpg" alt="")
+                        .product-item__content
+                            h3(class="product-item__title")
+                                a(href="#") MO512 - Alaskan Malamute
+                            .product-item__desc
+                                .product-item__desc-item Giống: <b>Đực</b>
+                                .product-item__dot
+                                .product-item__desc-item Tuổi: <b>03 tháng</b>
+                            .product-item__price 8.900.000 VND
+                    .product-item
+                        .product-item__image
+                            img(src="assets/images/product-1.jpg" alt="")
+                        .product-item__content
+                            h3(class="product-item__title")
+                                a(href="#") MO512 - Alaskan Malamute
+                            .product-item__desc
+                                .product-item__desc-item Giống: <b>Đực</b>
+                                .product-item__dot
+                                .product-item__desc-item Tuổi: <b>03 tháng</b>
+                            .product-item__price 8.900.000 VND
+                    .product-item
+                        .product-item__image
+                            img(src="assets/images/product-1.jpg" alt="")
+                        .product-item__content
+                            h3(class="product-item__title")
+                                a(href="#") MO512 - Alaskan Malamute
+                            .product-item__desc
+                                .product-item__desc-item Giống: <b>Đực</b>
+                                .product-item__dot
+                                .product-item__desc-item Tuổi: <b>03 tháng</b>
+                            .product-item__price 8.900.000 VND
+                    .product-item
+                        .product-item__image
+                            img(src="assets/images/product-1.jpg" alt="")
+                        .product-item__content
+                            h3(class="product-item__title")
+                                a(href="#") MO512 - Alaskan Malamute
+                            .product-item__desc
+                                .product-item__desc-item Giống: <b>Đực</b>
+                                .product-item__dot
+                                .product-item__desc-item Tuổi: <b>03 tháng</b>
+                            .product-item__price 8.900.000 VND
+                    .product-item
+                        .product-item__image
+                            img(src="assets/images/product-1.jpg" alt="")
+                        .product-item__content
+                            h3(class="product-item__title")
+                                a(href="#") MO512 - Alaskan Malamute
+                            .product-item__desc
+                                .product-item__desc-item Giống: <b>Đực</b>
+                                .product-item__dot
+                                .product-item__desc-item Tuổi: <b>03 tháng</b>
+                            .product-item__price 8.900.000 VND
+                    .product-item
+                        .product-item__image
+                            img(src="assets/images/product-1.jpg" alt="")
+                        .product-item__content
+                            h3(class="product-item__title")
+                                a(href="#") MO512 - Alaskan Malamute
+                            .product-item__desc
+                                .product-item__desc-item Giống: <b>Đực</b>
+                                .product-item__dot
+                                .product-item__desc-item Tuổi: <b>03 tháng</b>
+                            .product-item__price 8.900.000 VND
+                    .product-item
+                        .product-item__image
+                            img(src="assets/images/product-1.jpg" alt="")
+                        .product-item__content
+                            h3(class="product-item__title")
+                                a(href="#") MO512 - Alaskan Malamute
+                            .product-item__desc
+                                .product-item__desc-item Giống: <b>Đực</b>
+                                .product-item__dot
+                                .product-item__desc-item Tuổi: <b>03 tháng</b>
+                            .product-item__price 8.900.000 VND
+                    .product-item
+                        .product-item__image
+                            img(src="assets/images/product-1.jpg" alt="")
+                        .product-item__content
+                            h3(class="product-item__title")
+                                a(href="#") MO512 - Alaskan Malamute
+                            .product-item__desc
+                                .product-item__desc-item Giống: <b>Đực</b>
+                                .product-item__dot
+                                .product-item__desc-item Tuổi: <b>03 tháng</b>
+                            .product-item__price 8.900.000 VND
+                .section-2__button-bottom
+                    a(href="#" class="button button--outline") Xem thêm <i class="fa-solid fa-angle-right"></i>
+    //-end section-2
+    //-section-3
+    include ../partials/section-3.pug
+    //-end section-3
+    //-section-4
+    .section-4
+            .container
+                .box-head
+                    .box-head__left
+                        .box-head__sub-title Có thể bạn đã biết?
+                        h3(class="box-head__title") Kiến thức thú cưng hữu ích
+                    .box-head__right
+                        a(href="#" class="button button--outline") Xem thêm <i class="fa-solid fa-angle-right"></i>
+                .section-4__wrap
+                    .blog-item
+                        .blog-item__image
+                            a(href="#")
+                                img(src="assets/images/blog-1.jpg" alt="")
+                        .blog-item__content
+                            .blog-item__tag Kiến thức thú cưng
+                            h3(class="blog-item__title")
+                                a(href="#") Pomeranian là gì? Cách nhận biết chó Pomeranian
+                            p(class="blog-item__desc")
+                                |Pomeranian hay còn gọi là chó Pomeranian (chó Pom) luôn nằm trong top những thú cưng dễ thương nhất. Không chỉ vậy, giống chó xiếc nhỏ nhắn, đáng yêu, thông minh, thân thiện và khéo léo.
+                    .blog-item
+                        .blog-item__image
+                            a(href="#")
+                                img(src="assets/images/blog-2.jpg" alt="")
+                        .blog-item__content
+                            .blog-item__tag Kiến thức thú cưng
+                            h3(class="blog-item__title")
+                                a(href="#") Chế độ ăn cho chó bạn cần biết
+                            p(class="blog-item__desc")
+                                |Việc chia khẩu phần ăn cho chó thoạt nghe có vẻ đơn giản nhưng có một số quy tắc bạn nên biết để chó cưng dễ dàng hấp thụ các chất dinh dưỡng trong khẩu phần ăn. Dành cho những người mới bắt đầu nuôi chó, đặc biệt là chó con mới sinh có sức đề kháng tương đối yếu.
+                    .blog-item
+                        .blog-item__image
+                            a(href="#")
+                                img(src="assets/images/blog-3.jpg" alt="")
+                        .blog-item__content
+                            .blog-item__tag Kiến thức thú cưng
+                            h3(class="blog-item__title")
+                                a(href="#") Tại sao chó cắn phá đồ đạc và cách phòng ngừa hiệu quả
+                            p(class="blog-item__desc")
+                                |Chó cắn là hiện tượng phổ biến trong quá trình phát triển. Tuy nhiên, không ai muốn thấy đồ đạc, vật dụng quan trọng của mình bị chó cắn.
+                    .section-4__button-bottom
+                        a(href="#" class="button button--outline")
+                            |Xem thêm <i class="fa-solid fa-angle-right"></i>
+    //-end section-4
+
+       

@@ -1,0 +1,81 @@
+doctype html
+html 
+    head 
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        block title
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css")
+        link(rel="stylesheet", href="assets/css/style.css")
+    body
+        //-header
+        <!-- header -->
+        header.header
+            .container
+                .header__wrap
+                    button.header__button-menu
+                        i(class="fa-solid fa-bars")  
+                    .header__logo
+                        a(href="index.html")
+                            img(src="assets/images/logo.svg.svg" alt="Monito")
+                    nav(class="header__menu")
+                       ul
+                            li
+                                a(href="index.html") Trang Chủ
+                            li
+                                a(href="#") Danh Mục
+                            li
+                                a(href="#") Giới Thiệu
+                            li
+                                a(href="#") Liên Hệ
+                    button(class="header__button-search")
+                        i(class="fa-solid fa-magnifying-glass")
+                    form( action="" class="header__search")
+                        i(class="fa-solid fa-magnifying-glass")
+                        input(type="text" placeholder="Nhập từ khóa...")
+                    a(href="" class="button") Tham Gia Cộng Đồng
+        <!-- end header -->
+        //-end header
+        block main
+        //-footer
+        <!-- footer -->
+         footer(class="footer")
+            .container
+                .footer__top
+                    h2(class="footer__title") Đăng ký ngay để không bỏ lỡ các chương trình của chúng tôi
+                    form(action="" class="footer__form")
+                        input(type="text" placeholder="Nhập vào email của bạn ...")
+                        button Đăng kí ngay
+                .footer__middle
+                    nav(class="footer__links")
+                        ul
+                            li
+                                a(href="#") Trang Chủ
+                            li
+                                a(href="#") Danh Mục
+                            li
+                                a(href="#") Giới Thiệu
+                            li
+                                a(href="#") Liên Hệ
+                    nav(class="footer__socials")
+                        ul
+                            li
+                                a(href="#" target="_blank") <i class="fa-brands fa-facebook"></i>
+                            li
+                                a(href="#" target="_blank") <i class="fa-brands fa-twitter"></i>
+                            li
+                                a(href="#" target="_blank") <i class="fa-brands fa-instagram"></i>
+                            li
+                                a(href="#" target="_blank") <i class="fa-brands fa-youtube"></i>
+                .footer__bottom
+                    .footer__copyright
+                        |© 2023 28Tech. All rights reserved.
+                    .footer__logo
+                        img(src="assets/images/logo.svg.svg" alt="")
+                    .footer__links
+                        ul
+                            li
+                                a(href="#") Điều khoản dịch vụ
+                            li
+                                a(href="#") Chính sách bảo mật
+        <!-- footer -->
+        //-end footer

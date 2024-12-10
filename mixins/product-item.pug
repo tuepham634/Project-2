@@ -1,0 +1,12 @@
+mixin product-item(image, title, link, gender, age, price)
+    .product-item
+        .product-item__image
+            img(src=image alt="")
+        .product-item__content
+            h3(class="product-item__title")
+                a(href=link) #{title}
+            .product-item__desc
+                .product-item__desc-item Giống: <b>#{gender}</b>
+                .product-item__dot
+                .product-item__desc-item Tuổi: <b>#{age}</b>
+            .product-item__price #{price} VND

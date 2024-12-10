@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html> 
+  <head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách sản phẩm</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body><!-- header -->
+    <header class="header">
+      <div class="container">
+        <div class="header__wrap">
+          <button class="header__button-menu"><i class="fa-solid fa-bars"> </i></button>
+          <div class="header__logo"><a href="index.html"><img src="assets/images/logo.svg.svg" alt="Monito"></a></div>
+          <nav class="header__menu">
+            <ul>
+              <li><a href="index.html">Trang Chủ</a></li>
+              <li><a href="#">Danh Mục</a></li>
+              <li><a href="#">Giới Thiệu</a></li>
+              <li><a href="#">Liên Hệ</a></li>
+            </ul>
+          </nav>
+          <button class="header__button-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+          <form class="header__search" action=""><i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Nhập từ khóa...">
+          </form><a class="button" href="">Tham Gia Cộng Đồng</a>
+        </div>
+      </div>
+    </header><!-- end header -->
+    <nav class="box-breadcrumb">
+      <div class="container">
+        <ul class="box-breadcrumb__list">
+          <li class="box-breadcrumb__item"> <a class="box-breadcrumb__link" href="#">Trang chủ</a><i class="fa-solid fa-angle-right"></i></li>
+          <li class="box-breadcrumb__item"> <a class="box-breadcrumb__link" href="#">Chó</a><i class="fa-solid fa-angle-right"></i></li>
+          <li class="box-breadcrumb__item"> <a class="box-breadcrumb__link" href="#">Chó nhỏ</a><i class="fa-solid fa-angle-right"></i></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="section-3">
+      <div class="container">
+        <div class="section-3__wrap">
+          <div class="section-3__image"><img src="assets/images/Section-3-image-1.png" alt=""></div>
+          <div class="section-3__content">
+            <h2 class="section-3__title">Thêm Một Bạn</h2>
+            <h3 class="section-3__sub-title">Thêm Ngàn Niềm Vui!</h3>
+            <p class="section-3__desc">Có một con thú cưng đồng nghĩa với việc bạn có thêm niềm vui mới. Chúng tôi có hơn 200 con thú cưng khác nhau có thể đáp ứng nhu cầu của bạn!</p>
+            <div class="section-3__buttons"><a class="button button--outline" href="#">Giới Thiệu <i class="fa-regular fa-circle-play"></i></a><a class="button" href="#">Khám Phá Ngay</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="layout-product">
+      <div class="container"> 
+        <div class="layout-product__wrap">
+          <div class="layout-product__left">
+            <div class="filter">
+              <div class="filter__title"><img src="assets/images/Filter.svg">Bộ lọc</div>
+              <div class="filter__list">
+                <div class="filter__item">
+                  <div class="filter__item-title">Giống </div>
+                  <div class="filter__item-box">
+                    <div class="filter__item-choose"> 
+                      <input type="checkbox">
+                      <label>Đực </label>
+                    </div>
+                    <div class="filter__item-choose"> 
+                      <input type="checkbox">
+                      <label>Cái</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter__item">
+                  <div class="filter__item-title">Màu sắc</div>
+                  <div class="filter__item-box">
+                    <div class="filter__item-choose"> 
+                      <input type="checkbox">
+                      <label>Xám </label>
+                    </div>
+                    <div class="filter__item-choose"> 
+                      <input type="checkbox">
+                      <label>Đen</label>
+                    </div>
+                    <div class="filter__item-choose"> 
+                      <input type="checkbox">
+                      <label>Trắng</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter__item">
+                  <div class="filter__item-title">Màu sắc</div>
+                  <div class="filter__item-box">
+                    <div class="filter__item-choose"> 
+                      <input type="checkbox">
+                      <label>Nhỏ </label>
+                    </div>
+                    <div class="filter__item-choose"> 
+                      <input type="checkbox">
+                      <label>Vừa</label>
+                    </div>
+                    <div class="filter__item-choose"> 
+                      <input type="checkbox">
+                      <label>Lớn</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="layout-product__right">
+            <div class="layout-product__head">
+              <h1 class="layout-product__title">Chó nhỏ</h1>
+              <button class="layout-product__filter"> <img src="assets/images/Filter.svg">Bộ lọc</button>
+            </div>
+            <div class="layout-product__list">
+              <div class="product-item">
+                <div class="product-item__image"><img src="assets/images/product-1.jpg" alt=""></div>
+                <div class="product-item__content">
+                  <h3 class="product-item__title"><a href="#">MO512 - Alaskan Malamute</a></h3>
+                  <div class="product-item__desc">
+                    <div class="product-item__desc-item">Giống: <b>Đực</b></div>
+                    <div class="product-item__dot"></div>
+                    <div class="product-item__desc-item">Tuổi: <b>03 tháng</b></div>
+                  </div>
+                  <div class="product-item__price">8.900.000 VND</div>
+                </div>
+              </div>
+            </div>
+            <div class="layout-product__pagination">
+              <div class="pagination">
+                <button class="pagination__button"><i class="fa-solid fa-arrow-left"></i></button>
+                <button class="pagination__button pagination__button--active">1</button>
+                <button class="pagination__button">2</button>
+                <button class="pagination__button">3</button>
+                <button class="pagination__button">4</button>
+                <button class="pagination__button pagination__button--disabled">...</button>
+                <button class="pagination__button">28</button>
+                <button class="pagination__button"><i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <h2 class="footer__title">Đăng ký ngay để không bỏ lỡ các chương trình của chúng tôi</h2>
+          <form class="footer__form" action="">
+            <input type="text" placeholder="Nhập vào email của bạn ...">
+            <button>Đăng kí ngay</button>
+          </form>
+        </div>
+        <div class="footer__middle">
+          <nav class="footer__links">
+            <ul>
+              <li><a href="#">Trang Chủ</a></li>
+              <li><a href="#">Danh Mục</a></li>
+              <li><a href="#">Giới Thiệu</a></li>
+              <li><a href="#">Liên Hệ</a></li>
+            </ul>
+          </nav>
+          <nav class="footer__socials">
+            <ul>
+              <li><a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__copyright">© 2023 28Tech. All rights reserved.</div>
+          <div class="footer__logo"><img src="assets/images/logo.svg.svg" alt=""></div>
+          <div class="footer__links">
+            <ul>
+              <li><a href="#">Điều khoản dịch vụ</a></li>
+              <li><a href="#">Chính sách bảo mật</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer><!-- footer -->
+  </body>
+</html>

@@ -1,0 +1,133 @@
+extends ../layouts/default.pug
+include ../mixins/box-head.pug
+include ../mixins/breadcrumb.pug
+block title
+    title Trang chủ
+block main
+    .product-info
+        .container 
+            .product-info__wrap
+                .product-info__left
+                    .product-info__images-main
+                        img(src="assets/images/pet-1.jpg" alt="")
+                    .product-info__images-thumb
+                         img(src="assets/images/pet-1.jpg" alt="")
+                         img(src="assets/images/pet-2.jpg" alt="")
+                         img(src="assets/images/pet-3.jpg" alt="")
+                         img(src="assets/images/pet-4.jpg" alt="")
+                         img(src="assets/images/pet-5.jpg" alt="")
+                .product-info__right 
+                    -
+                        var breadcrumb = [
+                            {
+                                link: "#",
+                                title:"Trang chủ"
+                            },
+                            {
+                                link: "#",
+                                title:"Chó"
+                            },
+                            {
+                                link: "#",
+                                title:"Chó nhỏ"
+                            },
+                            {
+                                link: "#",
+                                title:"Shiba Inu Màu Nâu Đỏ"
+                            }
+                            
+                        ];
+                    +breadcrumb(breadcrumb)
+
+                    h1(class="product-info__title")  Shiba Inu Màu Nâu Đỏ
+                    .product-info__price 12.000.000 VNĐ
+                    .product-info__buttons
+                        a(href="#" class="button") Liên hệ 
+                        a(href="#" class="button button--outline") <i class="fa-regular fa-comment-dots"></i> Chat với Monito 
+                    .product-info__table
+                        table
+                            tbody  
+                                tr 
+                                    td SKU
+                                    td #1000078
+                                tr 
+                                    td Giống
+                                    td Cái
+                                tr 
+                                    td Tuổi
+                                    td 2 tháng
+                                tr 
+                                    td Kích thước
+                                    td Nhỏ
+                                tr 
+                                    td Màu sắc
+                                    td Nâu đỏ
+                                tr 
+                                    td Mô tả ngắn
+                                    td Giống thuần chủng Shih Tzu. Cấu trúc cơ thể 
+                                        |tốt. Với chứng chỉ MKA và Microchip. Cha từ 
+                                        |dòng dõi vô địch.
+                    nav.box-share
+                        .box-share__label <i class="fa-solid fa-share-nodes"></i> Chia sẻ:
+                        ul.box-share__list
+                            li 
+                                a(href="#") <i class="fa-brands fa-facebook"></i>
+                            li 
+                                a(href="#") <i class="fa-brands fa-instagram"></i>
+                            li 
+                                a(href="#") <i class="fa-brands fa-twitter"></i>
+                            li 
+                                a(href="#") <i class="fa-brands fa-youtube"></i>
+    .section-2
+        .container
+            +box-head(
+                "Có gì mới",
+                "Xem thêm chó con"
+            )
+            .section-2__wrap
+                .product-item
+                    .product-item__image
+                        img(src="assets/images/product-1.jpg" alt="")
+                    .product-item__content
+                        h3(class="product-item__title")
+                            a(href="#") MO512 - Alaskan Malamute
+                        .product-item__desc
+                            .product-item__desc-item Giống: <b>Đực</b>
+                            .product-item__dot
+                            .product-item__desc-item Tuổi: <b>03 tháng</b>
+                        .product-item__price 8.900.000 VND
+                .product-item
+                    .product-item__image
+                        img(src="assets/images/product-1.jpg" alt="")
+                    .product-item__content
+                        h3(class="product-item__title")
+                            a(href="#") MO512 - Alaskan Malamute
+                        .product-item__desc
+                            .product-item__desc-item Giống: <b>Đực</b>
+                            .product-item__dot
+                            .product-item__desc-item Tuổi: <b>03 tháng</b>
+                        .product-item__price 8.900.000 VND
+                .product-item
+                    .product-item__image
+                        img(src="assets/images/product-1.jpg" alt="")
+                    .product-item__content
+                        h3(class="product-item__title")
+                            a(href="#") MO512 - Alaskan Malamute
+                        .product-item__desc
+                            .product-item__desc-item Giống: <b>Đực</b>
+                            .product-item__dot
+                            .product-item__desc-item Tuổi: <b>03 tháng</b>
+                        .product-item__price 8.900.000 VND
+                .product-item
+                    .product-item__image
+                        img(src="assets/images/product-1.jpg" alt="")
+                    .product-item__content
+                        h3(class="product-item__title")
+                            a(href="#") MO512 - Alaskan Malamute
+                        .product-item__desc
+                            .product-item__desc-item Giống: <b>Đực</b>
+                            .product-item__dot
+                            .product-item__desc-item Tuổi: <b>03 tháng</b>
+                        .product-item__price 8.900.000 VND
+            .section-2__button-bottom
+                a(href="#" class="button button--outline") Xem thêm <i class="fa-solid fa-angle-right"></i>                            

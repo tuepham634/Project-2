@@ -1,0 +1,101 @@
+extends ../layouts/default.pug
+include ../mixins/breadcrumb.pug
+block title
+    title Danh sách sản phẩm
+block main 
+    //- box- breadcrumb
+    -
+        var breadcrumb = [
+            {
+                link: "#",
+                title:"Trang chủ"
+            },
+            {
+                link: "#",
+                title:"Chó"
+            },
+            {
+                link: "#",
+                title:"Chó nhỏ"
+            }
+        ];
+    +breadcrumb(breadcrumb,"container")
+    
+    //-end box- breadcrumb
+    //-section-3
+    include ../partials/section-3.pug
+    //-end section-3
+    //-layout product
+    .layout-product
+        .container 
+            .layout-product__wrap
+                .layout-product__left
+                    .filter
+                        .filter__title
+                            img(src="assets/images/Filter.svg")
+                            |Bộ lọc
+                        .filter__list
+                            .filter__item
+                                .filter__item-title Giống 
+                                .filter__item-box
+                                    .filter__item-choose 
+                                        input(type="checkbox")
+                                        label Đực 
+                                    .filter__item-choose 
+                                        input(type="checkbox")
+                                        label Cái
+                            .filter__item
+                                .filter__item-title Màu sắc
+                                .filter__item-box
+                                    .filter__item-choose 
+                                        input(type="checkbox")
+                                        label Xám 
+                                    .filter__item-choose 
+                                        input(type="checkbox")
+                                        label Đen
+                                    .filter__item-choose 
+                                        input(type="checkbox")
+                                        label Trắng
+                            .filter__item
+                                .filter__item-title Màu sắc
+                                .filter__item-box
+                                    .filter__item-choose 
+                                        input(type="checkbox")
+                                        label Nhỏ 
+                                    .filter__item-choose 
+                                        input(type="checkbox")
+                                        label Vừa
+                                    .filter__item-choose 
+                                        input(type="checkbox")
+                                        label Lớn
+                .layout-product__right
+                    .layout-product__head
+                        h1.layout-product__title Chó nhỏ
+                        button.layout-product__filter 
+                            img(src="assets/images/Filter.svg") 
+                            | Bộ lọc
+                    .layout-product__list
+                        .product-item
+                            .product-item__image
+                                img(src="assets/images/product-1.jpg" alt="")
+                            .product-item__content
+                                h3(class="product-item__title")
+                                    a(href="#") MO512 - Alaskan Malamute
+                                .product-item__desc
+                                    .product-item__desc-item Giống: <b>Đực</b>
+                                    .product-item__dot
+                                    .product-item__desc-item Tuổi: <b>03 tháng</b>
+                                .product-item__price 8.900.000 VND
+                    .layout-product__pagination
+                        .pagination
+                            button.pagination__button <i class="fa-solid fa-arrow-left"></i>
+                            button.pagination__button.pagination__button--active 1
+                            button.pagination__button 2
+                            button.pagination__button 3
+                            button.pagination__button 4
+                            button.pagination__button.pagination__button--disabled ...
+                            button.pagination__button 28
+                            button.pagination__button <i class="fa-solid fa-arrow-right"></i>
+
+
+    //-end layout product
